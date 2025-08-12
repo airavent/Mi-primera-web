@@ -1,17 +1,385 @@
-index.html
 <!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Primera Página</title>
+    <title>airaVent - Ventilador de Techo con Iluminación Roja para el Sueño</title>
+    <meta name="description" content="Descubre airaVent, el ventilador de techo revolucionario con iluminación roja diseñado para favorecer el sueño profundo y reparador.">
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@3.4.1/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        .hero-gradient {
+            background: linear-gradient(135deg, #1e1b4b 0%, #312e81 25%, #4c1d95 50%, #7c3aed 75%, #a855f7 100%);
+        }
+        .sleep-red {
+            background: linear-gradient(135deg, #dc2626 0%, #b91c1c 50%, #991b1b 100%);
+        }
+        .glow-effect {
+            box-shadow: 0 0 30px rgba(220, 38, 38, 0.6);
+        }
+        .floating {
+            animation: floating 3s ease-in-out infinite;
+        }
+        @keyframes floating {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-20px); }
+        }
+        .pulse-red {
+            animation: pulse-red 2s ease-in-out infinite;
+        }
+        @keyframes pulse-red {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.7; }
+        }
+    </style>
 </head>
-<body class="min-h-screen flex items-center justify-center bg-gradient-to-br from-indigo-500 via-purple-500 to-pink-500 font-sans">
-    <div class="bg-white bg-opacity-80 rounded-xl shadow-lg p-8 max-w-md w-full text-center">
-        <h1 class="text-4xl md:text-5xl font-extrabold text-gray-900 mb-4 font-sans">¡Hola mundo desde <span class="text-indigo-600">Cursor AI</span>!</h1>
-        <p class="text-lg md:text-xl text-gray-700 font-medium">Esta es mi primera web publicada con <span class="font-semibold text-pink-600">GitHub Pages 🚀</span></p>
-    </div>
+<body class="bg-gray-50 font-sans">
+    <!-- Header -->
+    <header class="bg-white shadow-lg sticky top-0 z-50">
+        <nav class="container mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+                <div class="flex items-center space-x-2">
+                    <i class="fas fa-fan text-3xl text-red-600"></i>
+                    <span class="text-2xl font-bold text-gray-800">airaVent</span>
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#caracteristicas" class="text-gray-600 hover:text-red-600 transition-colors">Características</a>
+                    <a href="#beneficios" class="text-gray-600 hover:text-red-600 transition-colors">Beneficios</a>
+                    <a href="#especificaciones" class="text-gray-600 hover:text-red-600 transition-colors">Especificaciones</a>
+                    <a href="#contacto" class="text-gray-600 hover:text-red-600 transition-colors">Contacto</a>
+                </div>
+                <button class="md:hidden text-gray-600">
+                    <i class="fas fa-bars text-xl"></i>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-gradient text-white py-20">
+        <div class="container mx-auto px-6 text-center">
+            <div class="max-w-4xl mx-auto">
+                <h1 class="text-5xl md:text-7xl font-bold mb-6">
+                    El Futuro del <span class="text-red-400">Sueño</span> Está Aquí
+                </h1>
+                <p class="text-xl md:text-2xl mb-8 text-gray-200">
+                    Descubre airaVent, el primer ventilador de techo con iluminación roja científicamente diseñada para favorecer el sueño profundo y reparador.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <button class="bg-red-600 hover:bg-red-700 text-white px-8 py-4 rounded-full text-lg font-semibold transition-all transform hover:scale-105 glow-effect">
+                        <i class="fas fa-shopping-cart mr-2"></i>
+                        Comprar Ahora
+                    </button>
+                    <button class="border-2 border-white text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-white hover:text-gray-800 transition-all">
+                        <i class="fas fa-play mr-2"></i>
+                        Ver Demo
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Product Showcase -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div class="text-center md:text-left">
+                    <h2 class="text-4xl md:text-5xl font-bold text-gray-800 mb-6">
+                        Tecnología <span class="text-red-600">Revolucionaria</span>
+                    </h2>
+                    <p class="text-xl text-gray-600 mb-8">
+                        airaVent combina la funcionalidad de un ventilador de alta eficiencia con iluminación roja de espectro completo, diseñada específicamente para estimular la producción de melatonina y favorecer el sueño natural.
+                    </p>
+                    <div class="space-y-4">
+                        <div class="flex items-center space-x-3">
+                            <i class="fas fa-check-circle text-green-500 text-xl"></i>
+                            <span class="text-gray-700">Iluminación roja de 660nm para máxima eficiencia</span>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <i class="fas fa-check-circle text-green-500 text-xl"></i>
+                            <span class="text-gray-700">Control remoto inteligente con temporizador</span>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <i class="fas fa-check-circle text-green-500 text-xl"></i>
+                            <span class="text-gray-700">Motor silencioso de bajo consumo energético</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="relative">
+                    <div class="bg-gradient-to-br from-red-500 to-red-700 rounded-full w-80 h-80 mx-auto flex items-center justify-center floating">
+                        <i class="fas fa-fan text-white text-8xl pulse-red"></i>
+                    </div>
+                    <div class="absolute -top-4 -right-4 bg-yellow-400 text-gray-800 px-4 py-2 rounded-full font-semibold transform rotate-12">
+                        ¡NUEVO!
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="caracteristicas" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold text-gray-800 mb-6">
+                    Características <span class="text-red-600">Destacadas</span>
+                </h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Cada detalle de airaVent ha sido cuidadosamente diseñado para proporcionar la mejor experiencia de sueño posible.
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-shadow">
+                    <div class="w-16 h-16 bg-red-100 rounded-full flex items-center justify-center mb-6 mx-auto">
+                        <i class="fas fa-lightbulb text-red-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-800 mb-4 text-center">Iluminación Roja Científica</h3>
+                    <p class="text-gray-600 text-center">
+                        Luz roja de 660nm que estimula la producción de melatonina, la hormona del sueño, sin interrumpir el ciclo natural del cuerpo.
+                    </p>
+                </div>
+                
+                <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-shadow">
+                    <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mb-6 mx-auto">
+                        <i class="fas fa-wind text-blue-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-800 mb-4 text-center">Ventilación Inteligente</h3>
+                    <p class="text-gray-600 text-center">
+                        Sistema de ventilación de 3 velocidades con control de temperatura automático para mantener el ambiente ideal para dormir.
+                    </p>
+                </div>
+                
+                <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-shadow">
+                    <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mb-6 mx-auto">
+                        <i class="fas fa-mobile-alt text-green-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-800 mb-4 text-center">Control Remoto</h3>
+                    <p class="text-gray-600 text-center">
+                        Mando a distancia con temporizador programable, control de intensidad de luz y velocidad del ventilador.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section id="beneficios" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div class="order-2 md:order-1">
+                    <img src="https://images.unsplash.com/photo-1513002749550-c59d86b8aa3d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" 
+                         alt="Persona durmiendo tranquilamente" 
+                         class="rounded-xl shadow-2xl">
+                </div>
+                <div class="order-1 md:order-2">
+                    <h2 class="text-4xl md:text-5xl font-bold text-gray-800 mb-6">
+                        Beneficios <span class="text-red-600">Científicamente</span> Comprobados
+                    </h2>
+                    <div class="space-y-6">
+                        <div class="flex items-start space-x-4">
+                            <div class="w-8 h-8 bg-red-600 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                                <i class="fas fa-moon text-white text-sm"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-semibold text-gray-800 mb-2">Sueño Más Profundo</h3>
+                                <p class="text-gray-600">La iluminación roja favorece la producción de melatonina, resultando en un sueño más profundo y reparador.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start space-x-4">
+                            <div class="w-8 h-8 bg-red-600 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                                <i class="fas fa-heart text-white text-sm"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-semibold text-gray-800 mb-2">Mejor Descanso</h3>
+                                <p class="text-gray-600">Reduce el tiempo para conciliar el sueño y mejora la calidad del descanso nocturno.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start space-x-4">
+                            <div class="w-8 h-8 bg-red-600 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                                <i class="fas fa-leaf text-white text-sm"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-semibold text-gray-800 mb-2">Eficiencia Energética</h3>
+                                <p class="text-gray-600">Consumo energético reducido con tecnología LED de última generación.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Specifications Section -->
+    <section id="especificaciones" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold text-gray-800 mb-6">
+                    Especificaciones <span class="text-red-600">Técnicas</span>
+                </h2>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+                <div class="bg-white p-8 rounded-xl shadow-lg">
+                    <h3 class="text-2xl font-bold text-gray-800 mb-6 text-center">Características Físicas</h3>
+                    <div class="space-y-4">
+                        <div class="flex justify-between py-2 border-b border-gray-200">
+                            <span class="text-gray-600">Diámetro:</span>
+                            <span class="font-semibold">120 cm</span>
+                        </div>
+                        <div class="flex justify-between py-2 border-b border-gray-200">
+                            <span class="text-gray-600">Altura:</span>
+                            <span class="font-semibold">30 cm</span>
+                        </div>
+                        <div class="flex justify-between py-2 border-b border-gray-200">
+                            <span class="text-gray-600">Peso:</span>
+                            <span class="font-semibold">8.5 kg</span>
+                        </div>
+                        <div class="flex justify-between py-2 border-b border-gray-200">
+                            <span class="text-gray-600">Material:</span>
+                            <span class="font-semibold">ABS Premium</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-white p-8 rounded-xl shadow-lg">
+                    <h3 class="text-2xl font-bold text-gray-800 mb-6 text-center">Especificaciones Técnicas</h3>
+                    <div class="space-y-4">
+                        <div class="flex justify-between py-2 border-b border-gray-200">
+                            <span class="text-gray-600">Potencia:</span>
+                            <span class="font-semibold">45W</span>
+                        </div>
+                        <div class="flex justify-between py-2 border-b border-gray-200">
+                            <span class="text-gray-600">Velocidades:</span>
+                            <span class="font-semibold">3 niveles</span>
+                        </div>
+                        <div class="flex justify-between py-2 border-b border-gray-200">
+                            <span class="text-gray-600">Iluminación:</span>
+                            <span class="font-semibold">LED 660nm</span>
+                        </div>
+                        <div class="flex justify-between py-2 border-b border-gray-200">
+                            <span class="text-gray-600">Control:</span>
+                            <span class="font-semibold">Remoto + App</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-20 sleep-red text-white">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-4xl md:text-5xl font-bold mb-6">
+                Transforma tu <span class="text-yellow-300">Sueño</span> Hoy
+            </h2>
+            <p class="text-xl mb-8 text-red-100 max-w-3xl mx-auto">
+                Únete a miles de personas que ya han experimentado la diferencia que airaVent puede hacer en su calidad de sueño.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <button class="bg-white text-red-600 px-8 py-4 rounded-full text-lg font-semibold hover:bg-gray-100 transition-all transform hover:scale-105">
+                    <i class="fas fa-credit-card mr-2"></i>
+                    Comprar por €299
+                </button>
+                <button class="border-2 border-white text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-white hover:text-red-600 transition-all">
+                    <i class="fas fa-phone mr-2"></i>
+                    Consultar Financiación
+                </button>
+            </div>
+            <p class="text-sm text-red-200 mt-4">
+                Envío gratuito • Garantía de 3 años • Devolución en 30 días
+            </p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contacto" class="bg-gray-900 text-white py-16">
+        <div class="container mx-auto px-6">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div>
+                    <div class="flex items-center space-x-2 mb-4">
+                        <i class="fas fa-fan text-2xl text-red-600"></i>
+                        <span class="text-xl font-bold">airaVent</span>
+                    </div>
+                    <p class="text-gray-400 mb-4">
+                        Revolucionando el sueño con tecnología de iluminación roja y ventilación inteligente.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-red-600 transition-colors">
+                            <i class="fab fa-facebook text-xl"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-red-600 transition-colors">
+                            <i class="fab fa-instagram text-xl"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-red-600 transition-colors">
+                            <i class="fab fa-twitter text-xl"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Producto</h3>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="#" class="hover:text-red-600 transition-colors">Características</a></li>
+                        <li><a href="#" class="hover:text-red-600 transition-colors">Especificaciones</a></li>
+                        <li><a href="#" class="hover:text-red-600 transition-colors">Manual de Usuario</a></li>
+                        <li><a href="#" class="hover:text-red-600 transition-colors">Garantía</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Soporte</h3>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="#" class="hover:text-red-600 transition-colors">Centro de Ayuda</a></li>
+                        <li><a href="#" class="hover:text-red-600 transition-colors">Contacto</a></li>
+                        <li><a href="#" class="hover:text-red-600 transition-colors">FAQ</a></li>
+                        <li><a href="#" class="hover:text-red-600 transition-colors">Reparaciones</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Contacto</h3>
+                    <div class="space-y-2 text-gray-400">
+                        <p><i class="fas fa-phone mr-2"></i> +34 900 123 456</p>
+                        <p><i class="fas fa-envelope mr-2"></i> info@airavent.com</p>
+                        <p><i class="fas fa-map-marker-alt mr-2"></i> Madrid, España</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 mt-12 pt-8 text-center text-gray-400">
+                <p>&copy; 2024 airaVent. Todos los derechos reservados. | Política de Privacidad | Términos de Servicio</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Add scroll effect to header
+        window.addEventListener('scroll', function() {
+            const header = document.querySelector('header');
+            if (window.scrollY > 100) {
+                header.classList.add('bg-white/95', 'backdrop-blur-sm');
+            } else {
+                header.classList.remove('bg-white/95', 'backdrop-blur-sm');
+            }
+        });
+    </script>
 </body>
 </html>
 
